@@ -2307,6 +2307,7 @@ static void recover_slack(edge_t * e, path * p)
     }
 }
 
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 static void resize_vn(vn, lx, cx, rx)
 node_t *vn;
 int lx, cx, rx;
@@ -2501,6 +2502,7 @@ _neighbor(graph_t* g, node_t *vn, edge_t *ie, edge_t *oe, int dir)
     return rv;
 }
 
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 static boolean pathscross(n0, n1, ie1, oe1)
 node_t *n0, *n1;
 edge_t *ie1, *oe1;
